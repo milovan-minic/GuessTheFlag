@@ -21,6 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7e-VD-KkE" userLabel="Button1">
+                                <rect key="frame" x="87" y="100" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-Kc-fht" userLabel="Button2">
                                 <rect key="frame" x="87" y="230" width="200" height="100"/>
                                 <state key="normal" image="germany"/>
@@ -29,15 +33,13 @@
                                 <rect key="frame" x="87" y="360" width="200" height="100"/>
                                 <state key="normal" image="nigeria"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7e-VD-KkE" userLabel="Button1">
-                                <rect key="frame" x="87" y="100" width="200" height="100"/>
-                                <state key="normal" image="us"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PLs-ik-gvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ep-Os-MgU"/>
+                            <constraint firstItem="PLs-ik-gvz" firstAttribute="top" secondItem="ecO-Kc-fht" secondAttribute="bottom" constant="30" id="JJd-2N-Qd7"/>
                             <constraint firstItem="c7e-VD-KkE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JRY-yz-gkd"/>
+                            <constraint firstItem="ecO-Kc-fht" firstAttribute="top" secondItem="c7e-VD-KkE" secondAttribute="bottom" constant="30" id="jyj-LG-CJK"/>
                             <constraint firstItem="PLs-ik-gvz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="296" id="nVy-aF-h95"/>
                             <constraint firstItem="ecO-Kc-fht" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rV4-mC-8RI"/>
                             <constraint firstItem="ecO-Kc-fht" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="166" id="u1x-qN-J2s"/>
@@ -45,6 +47,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5b0-rC-ywv"/>
+                    <connections>
+                        <outlet property="button1" destination="c7e-VD-KkE" id="hA7-sq-NbW"/>
+                        <outlet property="button2" destination="ecO-Kc-fht" id="uS2-sJ-ONM"/>
+                        <outlet property="button3" destination="PLs-ik-gvz" id="r1F-oH-B7k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
