@@ -21,23 +21,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-Kc-fht">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-Kc-fht" userLabel="Button2">
                                 <rect key="frame" x="87" y="230" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="germany"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLs-ik-gvz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLs-ik-gvz" userLabel="Button3">
                                 <rect key="frame" x="87" y="360" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="nigeria"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7e-VD-KkE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7e-VD-KkE" userLabel="Button1">
                                 <rect key="frame" x="87" y="100" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="us"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PLs-ik-gvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ep-Os-MgU"/>
+                            <constraint firstItem="c7e-VD-KkE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JRY-yz-gkd"/>
+                            <constraint firstItem="PLs-ik-gvz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="296" id="nVy-aF-h95"/>
+                            <constraint firstItem="ecO-Kc-fht" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rV4-mC-8RI"/>
+                            <constraint firstItem="ecO-Kc-fht" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="166" id="u1x-qN-J2s"/>
+                            <constraint firstItem="c7e-VD-KkE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="yNq-OF-V76"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5b0-rC-ywv"/>
                 </viewController>
@@ -64,4 +69,9 @@
             <point key="canvasLocation" x="189.59999999999999" y="792.95352323838085"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="germany" width="200" height="100"/>
+        <image name="nigeria" width="200" height="100"/>
+        <image name="us" width="200" height="100"/>
+    </resources>
 </document>
