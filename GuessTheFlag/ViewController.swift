@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     var countries = [String]()
     var score = 0
+    // Custom built light grey color just for demonstration purposes
+    var lightGrey = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1).cgColor
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +26,13 @@ class ViewController: UIViewController {
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
         
-        button1.layer.borderColor = UIColor.lightGray.cgColor
-        button2.layer.borderColor = UIColor.lightGray.cgColor
-        button3.layer.borderColor = UIColor.lightGray.cgColor
+//        button1.layer.borderColor = UIColor.lightGray.cgColor
+//        button2.layer.borderColor = UIColor.lightGray.cgColor
+//        button3.layer.borderColor = UIColor.lightGray.cgColor
+        // Usage of custom made light grey just for demonstration purposes
+        button1.layer.borderColor = lightGrey
+        button2.layer.borderColor = lightGrey
+        button3.layer.borderColor = lightGrey
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
         
