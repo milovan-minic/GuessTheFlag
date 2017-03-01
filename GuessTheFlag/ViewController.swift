@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
+        
+        askQuestion()
     }
     
     func askQuestion() {
