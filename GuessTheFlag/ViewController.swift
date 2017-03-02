@@ -6,6 +6,7 @@
 //  Copyright © 2017 Milovan Minic. All rights reserved.
 //
 
+import GameplayKit
 import UIKit
 
 class ViewController: UIViewController {
