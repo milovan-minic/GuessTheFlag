@@ -16,8 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var button3: UIButton!
     
     var countries = [String]()
+    var correctAnswer = 0
     var score = 0
-    // Custom built light grey color just for demonstration purposes
+    
     var lightGrey = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1).cgColor
     
     override func viewDidLoad() {
@@ -41,6 +42,9 @@ class ViewController: UIViewController {
     }
     
     func askQuestion() {
+        
+        countries = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: countries) as! [String]
+        
         button1.setImage(UIImage(named: countries[0]), for: .normal)
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
