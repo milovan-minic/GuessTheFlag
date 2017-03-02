@@ -50,6 +50,8 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
         correctAnswer = GKRandomSource.sharedRandom().nextInt(upperBound: 3)
+        
+        title = countries[correctAnswer].uppercased()
     }
 
     override func didReceiveMemoryWarning() {
