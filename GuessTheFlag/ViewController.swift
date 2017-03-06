@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         askQuestion()
     }
     
-    func askQuestion() {
+    func askQuestion(action: UIAlertAction! = nil) {
         
         countries = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: countries) as! [String]
         
