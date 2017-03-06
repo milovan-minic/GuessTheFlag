@@ -10,7 +10,7 @@ import GameplayKit
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -28,9 +28,9 @@ class ViewController: UIViewController {
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
         
-//        button1.layer.borderColor = UIColor.lightGray.cgColor
-//        button2.layer.borderColor = UIColor.lightGray.cgColor
-//        button3.layer.borderColor = UIColor.lightGray.cgColor
+        //        button1.layer.borderColor = UIColor.lightGray.cgColor
+        //        button2.layer.borderColor = UIColor.lightGray.cgColor
+        //        button3.layer.borderColor = UIColor.lightGray.cgColor
         // Usage of custom made light grey just for demonstration purposes
         button1.layer.borderColor = lightGrey
         button2.layer.borderColor = lightGrey
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         
         title = countries[correctAnswer].uppercased()
     }
-
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
         
         var title: String
@@ -65,12 +65,11 @@ class ViewController: UIViewController {
             title = "Wrong"
             score -= 1
         }
+        
+        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+        present(ac, animated: true)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
